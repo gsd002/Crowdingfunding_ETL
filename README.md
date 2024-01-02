@@ -15,7 +15,7 @@ Create the Category and Subcategory DataFrames
 
     The following image shows this category DataFrame:
 
-    ![image](https://github.com/gsd002/Crowdingfunding_ETL/assets/144679119/d844dbae-89aa-4bfd-9903-215410f486d1)
+  ![image](https://github.com/gsd002/Crowdingfunding_ETL/assets/144679119/d844dbae-89aa-4bfd-9903-215410f486d1)
 
     B) Export the category DataFrame as category.csv and save it to your GitHub repository.
 
@@ -27,7 +27,7 @@ Create the Category and Subcategory DataFrames
 
     The following image shows this subcategory DataFrame:
 
-    ![image](https://github.com/gsd002/Crowdingfunding_ETL/assets/144679119/185c9ef1-117f-425c-a0c0-034847d7aedc)
+  ![image](https://github.com/gsd002/Crowdingfunding_ETL/assets/144679119/185c9ef1-117f-425c-a0c0-034847d7aedc)
 
     D) Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository.
 
@@ -50,7 +50,7 @@ Create the Campaign DataFrame
       The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
 
       The following image shows this campaign DataFrame:
-      ![image](https://github.com/gsd002/Crowdingfunding_ETL/assets/144679119/d31daf3e-8700-4915-9d35-77ca9ecb496c)
+  ![image](https://github.com/gsd002/Crowdingfunding_ETL/assets/144679119/d31daf3e-8700-4915-9d35-77ca9ecb496c)
 
     B) Export the campaign DataFrame as campaign.csv and save it to your GitHub repository.
 
@@ -70,18 +70,18 @@ Create the Contacts DataFrame
     g) Split each "name" column value into a first and last name, and place each in a new column.
     h) Clean and export the DataFrame as contacts.csv and save it to your GitHub repository.
   
-    ![image](https://github.com/gsd002/Crowdingfunding_ETL/assets/144679119/ffa28bbb-9132-498e-a019-14661d2bd23b)
+  ![image](https://github.com/gsd002/Crowdingfunding_ETL/assets/144679119/ffa28bbb-9132-498e-a019-14661d2bd23b)
 
 Create the Crowdfunding Database
-    1) Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks to an external site..
-    2) Use the information from the ERD to create a table schema for each CSV file.
-        Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.
-    3) Save the database schema as a Postgres file named crowdfunding_db_schema.sql, and save it to your GitHub repository.
-    4) Create a new Postgres database, named crowdfunding_db.
-    5) Using the database schema, create the tables in the correct order to handle the foreign keys.
-    6) Verify the table creation by running a SELECT statement for each table.
-    7) Import each CSV file into its corresponding SQL table.
-    8) Verify that each table has the correct data by running a SELECT statement for each.
+  1) Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks to an external site..
+  2) Use the information from the ERD to create a table schema for each CSV file.
+     Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.
+  3) Save the database schema as a Postgres file named crowdfunding_db_schema.sql, and save it to your GitHub repository.
+  4) Create a new Postgres database, named crowdfunding_db.
+  5) Using the database schema, create the tables in the correct order to handle the foreign keys.
+  6) Verify the table creation by running a SELECT statement for each table.
+  7) Import each CSV file into its corresponding SQL table.
+  8) Verify that each table has the correct data by running a SELECT statement for each.
 
 Hints
     To split each "category & sub-category" column value into "category" and "subcategory" column values, use df[["new_column1","new_column2"]] = df["column"].str.split(). Make sure to pass the correct parameters to the split() function.
